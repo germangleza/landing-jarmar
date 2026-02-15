@@ -155,6 +155,50 @@
             font-size: 1em;
         }
 
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .testimonial-card {
+            background-color: var(--white);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-bottom: 3px solid var(--secondary-teal);
+            text-align: left;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            margin-bottom: 15px;
+            font-size: 1.05em;
+        }
+
+        .testimonial-card .author {
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 1.1em;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 1.1em;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+        }
+
+        .contact-info a {
+            color: var(--secondary-teal);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
         footer {
             background-color: var(--primary-dark);
             color: var(--white);
@@ -211,7 +255,28 @@
         </div>
     </section>
 
-    <section id="agenda-cita">
+    <section id="testimonios">
+        <div class="container">
+            <h2>Historias de Confianza y Claridad Visual en Tijuana</h2>
+            <p class="text-content">Escucha de quienes ya han experimentado la diferencia Jarmar.</p>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Llevo más de 20 años asistiendo a Jarmar, de cinco generaciones de mi familia han asistido y seguimos siendo fieles a ellos, ¿por qué? Por la excelente atención y humanidad que tienen con cada paciente. Gracias por cuidarnos y orientarnos siempre para tener una mejor salud visual, qué orgullo que crezcan y den lo mejor siempre. Mi admiración y respeto por tanto amor a su vocación "</p>
+                    <div class="author">Mariana Díaz Ramos</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Me encantó, es un concepto totalmente diferente al resto de las ópticas en Tijuana, tienen muchísimos armazones para elegir, el trato es excelente y la Dra. Te explica y resuelve tus dudas amablemente."</p>
+                    <div class="author">Alejandra Barrera</div>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Excelente servicio, encuentras todo lo que necesitas y cuentan con personal altamente capacitado. Precios justos y distintos servicios para cada tipo de necesidad oftalmológica."</p>
+                    <div class="author">Freddy Gomez Cervantes</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="agenda-cita" class="bg-light-gray">
         <div class="container">
             <h2>Tu Camino hacia una Visión Clara en Jarmar Tijuana</h2>
             <p class="text-content">Agendar tu cita es sencillo. Sigue estos pasos y déjanos cuidar de tu salud visual:</p>
@@ -230,6 +295,18 @@
                 </div>
             </div>
             <a href="#" class="btn">Agenda tu cita</a>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Encuéntranos en Tijuana</h2>
+            <p class="text-content">Estamos listos para atenderte con la calidad y experiencia que nos caracteriza.</p>
+            <div class="contact-info">
+                <p><strong>Dirección:</strong> David Alfaro Siqueiros #2795 local 101, Zona Urbana Río Tijuana, B.C.</p>
+                <p><strong>Teléfono:</strong> (664) 579 1970</p>
+                <a href="https://maps.app.goo.gl/mL59tX88EsvXNFhC7" target="_blank" class="btn">Ver en el mapa</a>
+            </div>
         </div>
     </section>
 
