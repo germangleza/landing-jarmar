@@ -263,6 +263,32 @@
             text-align: center;
             margin-top: 20px;
         }
+        /* New styles for Google Review Badge */
+        .google-review-badge {
+            text-align: center;
+            margin-bottom: 30px;
+            padding: 15px 20px;
+            border: 1px solid var(--secondary-teal);
+            background-color: rgba(77, 182, 172, 0.1);
+            border-radius: 8px;
+            display: inline-block; /* Para que el padding y border funcionen bien */
+        }
+        .google-review-badge .google-logo-icon {
+            height: 24px; /* Ajusta el tamaño del logo */
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .google-review-badge .stars {
+            font-size: 1.5em; /* Tamaño de las estrellas */
+            color: #f90; /* Color naranja para las estrellas */
+            vertical-align: middle;
+        }
+        .google-review-badge span {
+            font-size: 1.1em;
+            color: var(--text-light);
+            vertical-align: middle;
+            margin-left: 5px;
+        }
     </style>
 </head>
 <body>
@@ -313,11 +339,11 @@
 
     <section id="testimonios">
         <div class="container">
-            <h2>Historias de Confianza y Claridad Visual en Tijuana</h2>
-            <div class="google-review-badge" style="text-align: center; margin-bottom: 30px;">
-                <img src="https://www.gstatic.com/images/branding/product/2x/badge_40dp.png" alt="Google Logo" style="height: 24px; vertical-align: middle; margin-right: 5px;">
-                <span style="font-size: 1.5em; color: #f90; vertical-align: middle;">★★★★★</span>
-                <span style="font-size: 1.1em; color: var(--text-light); vertical-align: middle; margin-left: 5px;">4.9 en Google (Más de 150 reseñas)</span>
+            <h2>Calificación 4.9 en Google: Más de 150 Clientes en Tijuana nos Recomiendan</h2>
+            <div class="google-review-badge">
+                <img src="./assets/images/google-logo.png" alt="Google Logo" class="google-logo-icon">
+                <span class="stars">★★★★★</span>
+                <span>4.9 en Google (Más de 150 reseñas)</span>
             </div>
             <p class="text-content">Escucha de quienes ya han experimentado la diferencia Jarmar.</p>
             <div class="testimonials-grid">
